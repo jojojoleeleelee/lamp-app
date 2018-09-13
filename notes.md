@@ -22,3 +22,18 @@ So basically, my Rails API database need to update the store -redux- which then 
 
 lets do a order of a few things
 first fetch ESV bible verses
+
+LAST FEW THINGS TO ADD:
+
++ Populate database with scraped verses with the following values: word, book, memorized and emotion
+
+++++ Create Verse Form:
+Start with Emotion --> scrape verses related to the emotion ---> add a prayer : Card created!
+
+make sure you can update memorized or not memorized
+
+***내일 해야할것들:
++리액트 리덕스 완전 마무리
++정리정돈
++flow and routes
++dispatch, mapPropToState, connect
