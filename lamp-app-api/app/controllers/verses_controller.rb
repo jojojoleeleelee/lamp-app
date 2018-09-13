@@ -52,7 +52,7 @@ module Api::V1
 
       # Only allow a trusted parameter "white list" through.
       def verse_params
-        params.require(:verse).permit(:verse, :book, :memorized)
+        params.require(:verse).permit(:verse, :book, :chapter, :memorized)
       end
   end
 end

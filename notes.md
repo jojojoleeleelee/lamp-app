@@ -37,3 +37,7 @@ make sure you can update memorized or not memorized
 +정리정돈
 +flow and routes
 +dispatch, mapPropToState, connect
+
+buttons to delete and update and create
+CRUD
+write Blog

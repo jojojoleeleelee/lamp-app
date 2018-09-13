@@ -1,3 +1,3 @@
 class VerseSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :text, :book, :chapter, :memorized
 end
