@@ -2,7 +2,6 @@ class CreateVerses < ActiveRecord::Migration[5.2]
   def change
     create_table :verses do |t|
       t.text :word
-      t.references :emotion
       t.string :book
       t.boolean :memorized, default: false
 
