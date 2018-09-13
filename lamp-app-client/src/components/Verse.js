@@ -1,13 +1,11 @@
 import React from 'react';
 import 'isomorphic-fetch';
 
-const ESV_API_KEY = '10f7a096a5e8fca1ddab7cc693473e6968b7aa4f'
-const URL = 'https://api.esv.org/v3/passage/text/all.json?' +`api-key={ESV_API_KEY}`
-
 export const Verse = (props) => {
-  const verses = props.verse.map((verse, i) => {
-    return <li key={i}>{verse.text} {verse.book}</li>
-  })
+  debugger;
+  // const verses = props.verse.map((verse, i) => {
+  //   return <li key={i}>{verse.text} {verse.book}</li>
+  // })
 
   return (
     <div className="row">

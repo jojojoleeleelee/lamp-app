@@ -17,3 +17,8 @@ async fetch() calls - will have to use the localhost:3001/verses.api to connect 
 handle display of data with minimal data manipulation
 
 hook up Rails API db to the react frontend (how!?)
+
+So basically, my Rails API database need to update the store -redux- which then is processed through a reducer and is carried through across the many different components...
+
+lets do a order of a few things
+first fetch ESV bible verses
