@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux'
 
 const VerseCard = (props) => {
   return (
@@ -8,4 +9,10 @@ const VerseCard = (props) => {
   )
 }
 
-export default VerseCard
+const mapStateToProps = state => {
+  return {
+    text: state.text
+  }
+}
+
+export default connect(mapStateToProps)(VerseCard)

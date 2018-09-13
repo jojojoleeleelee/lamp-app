@@ -27,7 +27,8 @@ class Landing extends React.Component {
           <br /><br />
           <Link to="/myverses">
             <span>
-              <img src={logo} alt="lamp-logo" height="300" />
+              <img src={logo} alt="lamp-logo" height="300" /><br /><br />
+              <br /><br />
               <h1><strong>LAMP</strong></h1>
               <br /><br />
               <h5>My Verses</h5>
