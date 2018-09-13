@@ -21,3 +21,4 @@ export default class VerseRandom extends React.Component {
     )
   }
 }
+// also need connect(mapStateToProps for REDUX!)
