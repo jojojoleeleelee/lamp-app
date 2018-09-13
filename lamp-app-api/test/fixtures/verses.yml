@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  verse: MyText
+  book: MyString
+  memorized: false
+
+two:
+  verse: MyText
+  book: MyString
+  memorized: false
