@@ -1,13 +1,13 @@
 
-export function myBookSelector(selector){
+export function myVersesSelector(selector){
   return (dispatch) => {
-    dispatch({ type: 'MYBOOK_SELECTOR', payload: selector });
+    dispatch({ type: 'MYVERSES_SELECTOR', payload: selector });
   };
 }
 
-export function resetMyBook() {
+export function resetMyVerses() {
   return (dispatch) => {
-    dispatch({ type: 'RESET_MYBOOK'});
+    dispatch({ type: 'RESET_MYVERSES'});
   };
 }
 

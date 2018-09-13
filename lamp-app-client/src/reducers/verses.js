@@ -2,7 +2,7 @@ export default function verses(
   state = {
   verses: [],
   verse: '',
-  myBook:[],
+  myVerses:[],
   loading: false,
   need: ["hope","truth","love", "joy", "peace", "comfort", "faith", "strength"],
 }, action) {
@@ -14,16 +14,16 @@ export default function verses(
       return Object.assign({}, state, {verse: action.payload, loading: false})
     case "LOAD_ALL_VERSES":
       return Object.assign({}, state, { verses: action.payload, loading: false })
-    case "MYBOOK_SELECTOR":
-      let myBook = [...state.myBook]
-      if (state.myBook.includes(action.payload)) {
-        myBook = state.myBook.filter(item => item !== action.payload)
+    case "MYVERSES_SELECTOR":
+      let myVerses = [...state.myVerses]
+      if (state.myVerses.includes(action.payload)) {
+        myVerses = state.myVerses.filter(item => item !== action.payload)
       } else {
-        myBook.push(action.payload)
+        myVerses.push(action.payload)
       }
-      return Object.assign({}, state, {myBook: myBook})
-    case "RESET_MYBOOK":
-      return Object.assign({}, state, {verses: [], myBook: []})
+      return Object.assign({}, state, {myVerses: myVerses})
+    case "RESET_MYVERSES":
+      return Object.assign({}, state, {verses: [], myVerses: []})
     default:
       return state
   }

@@ -1,13 +1,13 @@
 export default function verses(state = {
-  navbook: true,
-  myBook: false
+  navbar: true,
+  myVerses: false
 }, action) {
 
   switch (action.type) {
-    case "NAVBOOK":
-      return Object.assign({}, state, { navbook: action.payload })
-    case "VIEW_MYBOOK":
-      return Object.assign({}, state, { myBook: action.payload })
+    case "NAVBAR":
+      return Object.assign({}, state, { navbar: action.payload })
+    case "VIEW_MYVERSES":
+      return Object.assign({}, state, { myVerses: action.payload })
     default:
       return state
   }
