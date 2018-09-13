@@ -1,11 +1,11 @@
-export function navbar(boolean){
+export function navbook(boolean){
   return (dispatch) => {
-    dispatch({ type: "NAVBAR", payload: boolean })
+    dispatch({ type: "NAVBOOK", payload: boolean })
   }
 }
 
-export function viewMyBar(boolean) {
+export function viewMyBook(boolean) {
   return (dispatch) => {
-    dispatch({ type: "VIEW_MYBAR", payload: boolean })
+    dispatch({ type: "VIEW_MYBOOK", payload: boolean })
   }
 }
