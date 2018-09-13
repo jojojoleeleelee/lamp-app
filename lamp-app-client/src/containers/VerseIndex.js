@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 
-import VerseCard from '../containers/VerseCard'
+import VerseCard from '../components/VerseCard'
 
 export default class VerseIndex extends React.Component {
   render() {
