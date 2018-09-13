@@ -9,23 +9,20 @@ export default class VerseRandom extends React.Component {
     verses: ''
   }
 
-  componentDidMount() {
-    this.handleSubmit()
-  }
-
-
-  handleSubmit = (search = 'joy') => {
-    console.log(search)
-    'Authorization: Token 10f7a096a5e8fca1ddab7cc693473e6968b7aa4f'
-    
-    fetch(`https://api.esv.org/v3/passage/text/search?=${search}`)
-    .then(res => res.json())
-    .then(({data}) => this.setState({
-      verses: data.map(verse => ({
-        verse
-      }))
-    }))
-  }
+  // componentDidMount() {
+  //   this.handleSubmit()
+  // }
+  // handleSubmit = (search = 'joy') => {
+  //   console.log(search)
+  //
+ // fetch(`https://api.esv.org/v3/passage/text/search?=${search}`)
+  //   .then(res => res.json())
+  //   .then(({data}) => this.setState({
+  //     verses: data.map(verse => ({
+  //       verse
+  //     }))
+  //   }))
+  // }
 
   render() {
     return (
