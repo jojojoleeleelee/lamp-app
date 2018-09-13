@@ -1,11 +1,29 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+// Don't connect to Redux yet - want to do some testing
+// import { connect } from 'react-redux';
+// import { bindActionCreators } from 'redux';
 import axios from 'axios';
 
 import VerseCard from '../components/VerseCard'
 
 export default class VerseIndex extends React.Component {
+  constructor(props){
+        super(props)
+        this.state = {
+            lists: []
+        }
+    }
+  componentDidMount() {
+      axios.get('http://localhost:3001/api/v1/lists.json')
+      .then(response => {
+          console.log(response)
+          this.setState({
+              lists: response.data
+          })
+      })
+      .catch(error => console.log(error))
+  }
+
   render() {
     return(
       <div className="row">
