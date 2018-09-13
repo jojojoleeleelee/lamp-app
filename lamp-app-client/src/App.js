@@ -8,17 +8,15 @@ import Home from './containers/Home'
 import MyVerses from './containers/MyVerses'
 import VerseShow from './containers/VerseShow'
 import VerseRandom from './containers/VerseRandom'
-import VersesIndex from './containers/VersesIndex'
+import VerseIndex from './containers/VerseIndex'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>LAMP</h1>
         <Router>
         <div>
-          {this.props.site.navbar ? <Navbar /> : null}
-          <div className={this.props.site.myBar ? "" : "container"}>
+          <Navbar />
             <div className="col s-12">
             <Switch>
               <Route exact path ="/" component={Home} />
@@ -29,7 +27,6 @@ class App extends Component {
             </Switch>
             </div>
           </div>
-        </div>
       </Router>
       </div>
     );
