@@ -19,15 +19,21 @@ class Landing extends React.Component {
     return (
       <div>
         <div className="center-align">
-          <br /><br />
-          <h1><strong>LAMP</strong></h1>
-          <h5>You word is a light unto my feet</h5>
-          <h5>And a guide to my path</h5>
+        <br /><br />
+        <br /><br />
+          <h5>"Thy word is a <emp>LAMP</emp> unto my feet</h5>
+          <h5>And a light unto my path"</h5>
+          <h5> - Psalm 119:105</h5>
           <br /><br />
           <Link to="/myverses">
             <span>
-              <img src={logo} alt="lamp-logo" height="300" /><br /><br />
-              <h5>Find Verses</h5>
+              <img src={logo} alt="lamp-logo" height="300" />
+              <h1><strong>LAMP</strong></h1>
+              <br /><br />
+              <h5>My Verses</h5>
+              <br /><br />
+              <br /><br />
+              <br /><br />
             </span>
           </Link>
         </div>
