@@ -22,9 +22,8 @@ export function loadVerse(id) {
 export function loadVerses() {
   return (dispatch) => {
     dispatch({ type: 'START_LOADING_VERSE' });
-    return fetch(`http://localhost:3001/verses`, {
-      accept: 'application/json',
-    }).then(response => response.json())
+    return fetch(`http://localhost:3001/verses`)
+      .then(response => response.json())
       .then(verses => dispatch({ type: 'LOAD_ALL_VERSES', payload: verses }));
   };
 }

@@ -2,22 +2,21 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import VerseCard from '../components/VerseCard'
+
 import { loadVerses } from '../actions/verses'
 import axios from 'axios'
 
-export default class VerseIndex extends React.Component {
+class VerseIndex extends React.Component {
 
-  createCards = () => {
-
-  }
   componentDidMount() {
     this.props.getVerses()
     }
 
-
   render() {
     return(
-      {this.state.verses}
+      <div>
+      Hello
+      </div>
     )
   }
 }

@@ -7,10 +7,10 @@ export const Verse = (props) => {
   //   return <li key={i}>{verse.text} {verse.book}</li>
   // })
 
-  return (
+  return(
     <div className="row">
       <div className="col s12">
-
+      Hello!
       </div>
     </div>
   )
