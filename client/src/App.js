@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import logo from './lamp-logo.png'
 import './App.css';
-
+import VerseContainer from './components/VerseContainer'
 
 class App extends Component {
   render() {
@@ -16,18 +15,20 @@ class App extends Component {
           <h5>And a light unto my path"</h5>
           <h5> - Psalm 119:105</h5>
           <br /><br />
-          <Link to="/verses">
+
             <span>
               <img src={logo} alt="lamp-logo" height="300" /><br /><br />
+              <VerseContainer />
               <br /><br />
               <h1><strong>LAMP</strong></h1>
               <br /><br />
               <h5>My Verses</h5>
               <br /><br />
+
               <br /><br />
               <br /><br />
             </span>
-          </Link>
+
         </div>
       </div>
       </div>
