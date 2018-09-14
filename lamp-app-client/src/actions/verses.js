@@ -1,3 +1,34 @@
+export function loadRandomVerse() {
+  const randomNum = Math.floor(Math.random() * Math.floor(250)) + 1
+  return (dispatch) => {
+    dispatch({ type: 'START_LOADING_VERSE' });
+    return fetch(`http://localhost:3001/recipes/${randomNum}`, {
+      accept: 'application/json',
+    }).then(response => response.json())
+      .then(verse => dispatch({ type: 'LOAD_VERSE', payload:verse }));
+  };
+}
+
+export function loadVerse(id) {
+  return (dispatch) => {
+    dispatch({ type: 'START_LOADING_VERSE' });
+    return fetch(`http://localhost:3001/recipes/${id}`, {
+      accept: 'application/json',
+    }).then(response => response.json())
+      .then(verse => dispatch({ type: 'LOAD_VERSE', payload: verse }));
+  };
+}
+
+export function loadVerses() {
+  return (dispatch) => {
+    dispatch({ type: 'START_LOADING_VERSE' });
+    return fetch(`http://localhost:3001/recipes`, {
+      accept: 'application/json',
+    }).then(response => response.json())
+      .then(verses => dispatch({ type: 'LOAD_ALL_VERSES', payload: verses }));
+  };
+}
+
 
 export function myVersesSelector(selector){
   return (dispatch) => {
@@ -10,15 +41,4 @@ export function resetMyVerses() {
     dispatch({ type: 'RESET_MYVERSES'});
   };
 }
-
-export function unloadVerse() {
-  return (dispatch) => {
-    dispatch({ type: 'LOAD_VERSE', payload: '' });
-  };
-}
-
-export function unloadVerses() {
-  return (dispatch) => {
-    dispatch({ type: 'LOAD_ALL_VERSES', payload: [] });
-  };
 }

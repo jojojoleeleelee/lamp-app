@@ -10,15 +10,15 @@ export default class VerseIndex extends React.Component {
   constructor(props){
         super(props)
         this.state = {
-            lists: []
+            verses: []
         }
     }
   componentDidMount() {
-      axios.get('http://localhost:3001/api/v1/lists.json')
+      axios.get('http://localhost:3001/api/v1/verses.json')
       .then(response => {
           console.log(response)
           this.setState({
-              lists: response.data
+              verses: response.data
           })
       })
       .catch(error => console.log(error))

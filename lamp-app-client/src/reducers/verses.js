@@ -4,7 +4,6 @@ export default function verses(
   verse: '',
   myVerses:[],
   loading: false,
-  need: ["hope","truth","love", "joy", "peace", "comfort", "faith", "strength"],
 }, action) {
 
   switch(action.type){
