@@ -1,6 +1,4 @@
 import React from 'react';
-import 'isomorphic-fetch';
-
 
 export const Verse = (props) => {
   // const verses = props.verse.map((verse, i) => {
@@ -15,6 +13,11 @@ export const Verse = (props) => {
     </div>
   )
 }
+// <div className="single-list" key={verse.id}>
+//     <h4>{verse.text}</h4>
+//     <h4>{verse.book}</h4>
+//     <p>{verse.chapter}</p>
+// </div>
 
 // <h2 className="center-align">{props.verse.emotion}</h2><br/>
 // <div className="col s6">
