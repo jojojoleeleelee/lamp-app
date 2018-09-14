@@ -1,5 +1,5 @@
 class Verse < ApplicationRecord
 
-  validates_uniqueness_of :word
-  validates :word, presence: true
+  validates_uniqueness_of :text
+  validates :text, presence: true
 end
