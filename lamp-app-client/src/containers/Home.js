@@ -21,11 +21,11 @@ class Landing extends React.Component {
         <div className="center-align">
         <br /><br />
         <br /><br />
-          <h5>"Thy word is a <emp>LAMP</emp> unto my feet</h5>
+          <h5>"Thy word is a LAMP unto my feet</h5>
           <h5>And a light unto my path"</h5>
           <h5> - Psalm 119:105</h5>
           <br /><br />
-          <Link to="/myverses">
+          <Link to="/verses">
             <span>
               <img src={logo} alt="lamp-logo" height="300" /><br /><br />
               <br /><br />

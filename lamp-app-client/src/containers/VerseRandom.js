@@ -9,7 +9,9 @@ class VerseRandom extends React.Component {
     verses: ''
   }
 
-  handleRandom
+  handleRandom() {
+    
+  }
 
   render() {
     return (
@@ -23,4 +25,5 @@ class VerseRandom extends React.Component {
   }
 }
 // also need connect(maDispatchToProps and state for REDUX!)
-export default connect(mapStateToProps, mapDispatchToProps)(VerseRandom)
+export default VerseRandom
+// connect(mapStateToProps, mapDispatchToProps)(VerseRandom)
