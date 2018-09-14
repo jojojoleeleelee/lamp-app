@@ -4,18 +4,17 @@ import { bindActionCreators } from 'redux';
 import VerseCard from '../components/VerseCard'
 
 import { loadVerses } from '../actions/verses'
-import axios from 'axios'
 
 class VerseIndex extends React.Component {
 
   componentDidMount() {
-    this.props.getVerses()
+    this.props.loadVerses()
     }
 
   render() {
     return(
       <div>
-      Hello
+      <VerseCard />
       </div>
     )
   }
@@ -23,14 +22,14 @@ class VerseIndex extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    verses: state.verses,
+    verses: state.verses
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
-  return {
-    getVerses: bindActionCreators(loadVerses, dispatch)
-  }
+  return bindActionCreators({
+    loadVerses: loadVerses
+  }, dispatch)
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(VerseIndex)
