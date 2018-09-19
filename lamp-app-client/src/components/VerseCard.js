@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 const VerseCard = (props) => {
   return (
     <div>
-    <h3>{props.text}</h3>
+    <h3>{console.log(props)}</h3>
     </div>
   )
 }

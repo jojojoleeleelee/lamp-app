@@ -8,7 +8,8 @@ import { loadVerses } from '../actions/verses'
 class VerseIndex extends React.Component {
 
   componentDidMount() {
-    this.props.loadVerses()
+    this.props.getVerses()
+    console.log(this.props)
     }
 
   render() {
@@ -22,14 +23,14 @@ class VerseIndex extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    verses: state.verses
+    verses: state.verses,
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({
-    loadVerses: loadVerses
-  }, dispatch)
+  return {
+    getVerses: bindActionCreators(loadVerses, dispatch),
+  }
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(VerseIndex)

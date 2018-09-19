@@ -6,14 +6,14 @@ import { bindActionCreators } from 'redux';
 import { navbar } from '../actions/site'
 import logo from '../lamp-logo.png'
 
-class Landing extends React.Component {
-  componentWillMount() {
-    this.props.navbar(false)
-  }
-
-  componentWillUnmount(){
-    this.props.navbar(true)
-  }
+class Home extends React.Component {
+  // componentWillMount() {
+  //   this.props.navbar(false)
+  // }
+  //
+  // componentWillUnmount(){
+  //   this.props.navbar(true)
+  // }
 
   render(){
     return (
@@ -56,4 +56,4 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(Landing)
+export default connect(mapStateToProps, mapDispatchToProps)(Home)
