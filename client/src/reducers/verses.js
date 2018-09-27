@@ -12,7 +12,7 @@ export default function verses(
     case "LOAD_VERSE":
       return Object.assign({}, state, {verse: action.payload, loading: false})
     case "LOAD_ALL_VERSES":
-      return Object.assign({}, state, { verses: action.payload, loading: false })
+      return Object.assign({}, state, {verses: action.payload, loading: false })
     case "MYVERSES_SELECTOR":
       let myVerses = [...state.myVerses]
       if (state.myVerses.includes(action.payload)) {

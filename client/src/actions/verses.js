@@ -24,8 +24,7 @@ export function loadVerses() {
     dispatch({ type: 'START_LOADING_VERSE' });
     return fetch(`http://localhost:3001/verses`)
       .then(res => res.json())
-      .then(json => console.log(json));
-      // .then(json => dispatch({ type: 'LOAD_ALL_VERSES', payload: json}));
+      .then(json => dispatch({ type: 'LOAD_ALL_VERSES', payload: json}));
   };
 }
 

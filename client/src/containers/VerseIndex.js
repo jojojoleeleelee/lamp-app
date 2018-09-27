@@ -1,15 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import VerseCard from '../components/VerseCard';
+import { loadVerses } from '../actions/verses';
 import { bindActionCreators } from 'redux';
-import VerseCard from '../components/VerseCard'
-
-import { loadVerses } from '../actions/verses'
 
 class VerseIndex extends React.Component {
 
   componentDidMount() {
     this.props.getVerses()
     console.log(this.props)
+
     }
 
   render() {
@@ -23,7 +23,7 @@ class VerseIndex extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    verses: state.verses,
+    verses: state.verses
   }
 }
 

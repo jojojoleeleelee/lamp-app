@@ -7,13 +7,6 @@ import { navbar } from '../actions/site'
 import logo from '../lamp-logo.png'
 
 class Home extends React.Component {
-  // componentWillMount() {
-  //   this.props.navbar(false)
-  // }
-  //
-  // componentWillUnmount(){
-  //   this.props.navbar(true)
-  // }
 
   render(){
     return (

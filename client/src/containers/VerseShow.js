@@ -12,9 +12,10 @@ class VerseShow extends React.Component {
   render() {
     return (
       <div>
-      {this.props.verse !== ''} ? <Verse verse={this.props.verse} /> : null}
+  
       </div>
     )
+    // {this.props.verse !== ''} ? <Verse verse={this.props.verse} /> : null}
     // I want to have Verses as cards that can be flipped over and pressed
   }
 }
