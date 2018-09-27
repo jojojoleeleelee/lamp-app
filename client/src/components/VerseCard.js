@@ -1,10 +1,15 @@
 import React from 'react';
 import { connect } from 'react-redux'
 
-const VerseCard = (props) => {
+const VerseCard = (verse) => {
+
   return (
     <div>
-    <h3>{console.log(props)}</h3>
+      <ul>
+      <li>{verse.verse.text}</li>
+      <li>{verse.verse.book}</li>
+      <li>{verse.verse.chapter}</li>
+      </ul>
     </div>
   )
 }

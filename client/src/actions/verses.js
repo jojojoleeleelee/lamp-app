@@ -1,3 +1,10 @@
+const getVerses = verses => {
+  return {
+    type: "LOAD_ALL_VERSES",
+    verses
+  }
+}
+
 export function loadRandomVerse() {
   const randomNum = Math.floor(Math.random() * Math.floor(250)) + 1
   return (dispatch) => {
@@ -39,4 +46,13 @@ export function resetMyVerses() {
   return (dispatch) => {
     dispatch({ type: 'RESET_MYVERSES'});
   };
+}
+
+
+export const loadNewVerses = () => {
+  return dispatch => {
+    return fetch(`http://localhost:3001/verses`)
+    .then(res => res.json())
+    .then(verses => dispatch(getVerses(verses)))
+  }
 }

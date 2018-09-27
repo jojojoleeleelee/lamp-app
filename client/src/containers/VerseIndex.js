@@ -1,21 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import VerseCard from '../components/VerseCard';
-import { loadVerses } from '../actions/verses';
-import { bindActionCreators } from 'redux';
+import { loadNewVerses } from '../actions/verses';
 
 class VerseIndex extends React.Component {
 
   componentDidMount() {
-    this.props.getVerses()
-    console.log(this.props)
-
+    this.props.loadNewVerses()
     }
+
 
   render() {
     return(
       <div>
-      <VerseCard />
+
+      {this.props.verses.map(verse =>
+      <VerseCard key={verse.id} index={verse.id} verse={verse}/>)}
+
       </div>
     )
   }
@@ -27,10 +28,6 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    getVerses: bindActionCreators(loadVerses, dispatch),
-  }
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(VerseIndex)
+export default connect(mapStateToProps, {
+  loadNewVerses
+})(VerseIndex)
