@@ -5,6 +5,14 @@ const getVerses = verses => {
   }
 }
 
+export const loadVerses = () => {
+  return dispatch => {
+    return fetch(`http://localhost:3001/verses`)
+    .then(res => res.json())
+    .then(verses => dispatch(getVerses(verses)))
+  }
+}
+
 export function loadRandomVerse() {
   const randomNum = Math.floor(Math.random() * Math.floor(250)) + 1
   return (dispatch) => {
@@ -26,16 +34,6 @@ export function loadVerse(id) {
   };
 }
 
-export function loadVerses() {
-  return (dispatch) => {
-    dispatch({ type: 'START_LOADING_VERSE' });
-    return fetch(`http://localhost:3001/verses`)
-      .then(res => res.json())
-      .then(json => dispatch({ type: 'LOAD_ALL_VERSES', payload: json}));
-  };
-}
-
-
 export function myVersesSelector(selector){
   return (dispatch) => {
     dispatch({ type: 'MYVERSES_SELECTOR', payload: selector });
@@ -46,13 +44,4 @@ export function resetMyVerses() {
   return (dispatch) => {
     dispatch({ type: 'RESET_MYVERSES'});
   };
-}
-
-
-export const loadNewVerses = () => {
-  return dispatch => {
-    return fetch(`http://localhost:3001/verses`)
-    .then(res => res.json())
-    .then(verses => dispatch(getVerses(verses)))
-  }
 }

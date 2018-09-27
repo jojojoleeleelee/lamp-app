@@ -2,350 +2,350 @@
 {
 
 book_name: "Deuteronomy",
-verse_id: "21",
+verse_id: "13",
 verse_text: "You shall rejoice in your feast, you and your son and your daughter, your male servant and your female servant, the Levite, the sojourner, the fatherless, and the widow who are within your towns."
 
 },
 {
 
 book_name: "Deuteronomy",
-verse_id: "21",
+verse_id: "19",
 verse_text: "For seven days you shall keep the feast to the LORD your God at the place that the LORD will choose, because the LORD your God will bless you in all your produce and in all the work of your hands, so that you will be altogether joyful."
 
 },
 {
 
 book_name: "Deuteronomy",
-verse_id: "21",
+verse_id: "11",
 verse_text: "And you shall rejoice in all the good that the LORD your God has given to you and to your house, you, and the Levite, and the sojourner who is among you."
 
 },
 {
 
 book_name: "Deuteronomy",
-verse_id: "21",
+verse_id: "13",
 verse_text: "Because you did not serve the LORD your God with joyfulness and gladness of heart, because of the abundance of all things,"
 
 },
 {
 
 book_name: "Judges",
-verse_id: "21",
+verse_id: "20",
 verse_text: "if you then have acted in good faith and integrity with Jerubbaal and with his house this day, then rejoice in Abimelech, and let him also rejoice in you."
 
 },
 {
 
 book_name: "1 Samuel",
-verse_id: "21",
+verse_id: "20",
 verse_text: "And Hannah prayed and said, “My heart exults in the LORD; my strength is exalted in the LORD. My mouth derides my enemies, because I rejoice in your salvation."
 
 },
 {
 
 book_name: "1 Kings",
-verse_id: "21",
+verse_id: "20",
 verse_text: "On the eighth day he sent the people away, and they blessed the king and went to their homes joyful and glad of heart for all the goodness that the LORD had shown to David his servant and to Israel his people."
 
 },
 {
 
 book_name: "2 Chronicles",
-verse_id: "21",
+verse_id: "20",
 verse_text: "“And now arise, O LORD God, and go to your resting place, you and the ark of your might. Let your priests, O LORD God, be clothed with salvation, and let your saints rejoice in your goodness."
 
 },
 {
 
 book_name: "2 Chronicles",
-verse_id: "21",
+verse_id: "20",
 verse_text: "On the twenty-third day of the seventh month he sent the people away to their homes, joyful and glad of heart for the prosperity that the LORD had granted to David and to Solomon and to Israel his people."
 
 },
 {
 
 book_name: "Ezra",
-verse_id: "21",
+verse_id: "1",
 verse_text: "so that the people could not distinguish the sound of the joyful shout from the sound of the people’s weeping, for the people shouted with a great shout, and the sound was heard far away."
 
 },
 {
 
 book_name: "Ezra",
-verse_id: "21",
+verse_id: "7",
 verse_text: "And they kept the Feast of Unleavened Bread seven days with joy, for the LORD had made them joyful and had turned the heart of the king of Assyria to them, so that he aided them in the work of the house of God, the God of Israel."
 
 },
 {
 
 book_name: "Esther",
-verse_id: "21",
+verse_id: "7",
 verse_text: "And Haman went out that day joyful and glad of heart. But when Haman saw Mordecai in the king’s gate, that he neither rose nor trembled before him, he was filled with wrath against Mordecai."
 
 },
 {
 
 book_name: "Esther",
-verse_id: "21",
+verse_id: "20",
 verse_text: "Then his wife Zeresh and all his friends said to him, “Let a gallows fifty cubits high be made, and in the morning tell the king to have Mordecai hanged upon it. Then go joyfully with the king to the feast.” This idea pleased Haman, and he had the gallows made."
 
 },
 {
 
 book_name: "Job",
-verse_id: "21",
+verse_id: "2",
 verse_text: "Behold, let that night be barren; let no joyful cry enter it."
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "120",
 verse_text: "that I may recount all your praises, that in the gates of the daughter of Zion I may rejoice in your salvation."
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "20",
 verse_text: "But I have trusted in your steadfast love; my heart shall rejoice in your salvation."
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "110",
 verse_text: "Then my soul will rejoice in the LORD, exulting in his salvation."
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "30",
 verse_text: "My soul will be satisfied as with fat and rich food, and my mouth will praise you with joyful lips,"
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "40",
 verse_text: "But the king shall rejoice in God; all who swear by him shall exult, for the mouths of liars will be stopped."
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "29",
 verse_text: "Let the righteous one rejoice in the LORD and take refuge in him! Let all the upright in heart exult!"
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "30",
 verse_text: "He turned the sea into dry land; they passed through the river on foot. There did we rejoice in him,"
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "27",
 verse_text: "Will you not revive us again, that your people may rejoice in you?"
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "89",
 verse_text: "Oh come, let us sing to the LORD; let us make a joyful noise to the rock of our salvation!"
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "38",
 verse_text: "Let us come into his presence with thanksgiving; let us make a joyful noise to him with songs of praise!"
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "22",
 verse_text: "Rejoice in the LORD, O you righteous, and give thanks to his holy name!"
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "110",
 verse_text: "Make a joyful noise to the LORD, all the earth; break forth into joyous song and sing praises!"
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "9",
 verse_text: "With trumpets and the sound of the horn make a joyful noise before the King, the LORD!"
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "2",
 verse_text: "Make a joyful noise to the LORD, all the earth!"
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "84",
 verse_text: "May the glory of the LORD endure forever; may the LORD rejoice in his works,"
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "8",
 verse_text: "May my meditation be pleasing to him, for I rejoice in the LORD."
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "48",
 verse_text: "that I may look upon the prosperity of your chosen ones, that I may rejoice in the gladness of your nation, that I may glory with your inheritance."
 
 },
 {
 
 book_name: "Psalm",
-verse_id: "21",
+verse_id: "89",
 verse_text: "Let Israel be glad in his Maker; let the children of Zion rejoice in their King!"
 
 },
 {
 
 book_name: "Proverbs",
-verse_id: "21",
+verse_id: "2",
 verse_text: "who rejoice in doing evil and delight in the perverseness of evil,"
 
 },
 {
 
 book_name: "Proverbs",
-verse_id: "21",
+verse_id: "24",
 verse_text: "Let your fountain be blessed, and rejoice in the wife of your youth,"
 
 },
 {
 
 book_name: "Proverbs",
-verse_id: "21",
+verse_id: "22",
 verse_text: "A joyful heart is good medicine, but a crushed spirit dries up the bones."
 
 },
 {
 
 book_name: "Ecclesiastes",
-verse_id: "21",
+verse_id: "8",
 verse_text: "I perceived that there is nothing better for them than to be joyful and to do good as long as they live;"
 
 },
 {
 
 book_name: "Ecclesiastes",
-verse_id: "21",
+verse_id: "2",
 verse_text: "So I saw that there is nothing better than that a man should rejoice in his work, for that is his lot. Who can bring him to see what will be after him?"
 
 },
 {
 
 book_name: "Ecclesiastes",
-verse_id: "21",
+verse_id: "4",
 verse_text: "There was no end of all the people, all of whom he led. Yet those who come later will not rejoice in him. Surely this also is vanity and a striving after wind."
 
 },
 {
 
 book_name: "Ecclesiastes",
-verse_id: "21",
+verse_id: "2",
 verse_text: "Everyone also to whom God has given wealth and possessions and power to enjoy them, and to accept his lot and rejoice in his toil—this is the gift of God."
 
 },
 {
 
 book_name: "Ecclesiastes",
-verse_id: "21",
+verse_id: "4",
 verse_text: "In the day of prosperity be joyful, and in the day of adversity consider: God has made the one as well as the other, so that man may not find out anything that will be after him."
 
 },
 {
 
 book_name: "Ecclesiastes",
-verse_id: "21",
+verse_id: "9",
 verse_text: "And I commend joy, for man has no good thing under the sun but to eat and drink and be joyful, for this will go with him in his toil through the days of his life that God has given him under the sun."
 
 },
 {
 
 book_name: "Ecclesiastes",
-verse_id: "21",
+verse_id: "10",
 verse_text: "So if a person lives many years, let him rejoice in them all; but let him remember that the days of darkness will be many. All that comes is vanity."
 
 },
 {
 
 book_name: "Isaiah",
-verse_id: "21",
+verse_id: "40",
 verse_text: "It will be said on that day, “Behold, this is our God; we have waited for him, that he might save us. This is the LORD; we have waited for him; let us be glad and rejoice in his salvation.”"
 
 },
 {
 
 book_name: "Isaiah",
-verse_id: "21",
+verse_id: "24",
 verse_text: "you shall winnow them, and the wind shall carry them away, and the tempest shall scatter them. And you shall rejoice in the LORD; in the Holy One of Israel you shall glory."
 
 },
 {
 
 book_name: "Isaiah",
-verse_id: "21",
+verse_id: "22",
 verse_text: "these I will bring to my holy mountain, and make them joyful in my house of prayer; their burnt offerings and their sacrifices will be accepted on my altar; for my house shall be called a house of prayer for all peoples.”"
 
 },
 {
 
 book_name: "Isaiah",
-verse_id: "21",
+verse_id: "44",
 verse_text: "Instead of your shame there shall be a double portion; instead of dishonor they shall rejoice in their lot; therefore in their land they shall possess a double portion; they shall have everlasting joy."
 
 },
 {
 
 book_name: "Isaiah",
-verse_id: "21",
+verse_id: "12",
 verse_text: "I will greatly rejoice in the LORD; my soul shall exult in my God, for he has clothed me with the garments of salvation; he has covered me with the robe of righteousness, as a bridegroom decks himself like a priest with a beautiful headdress, and as a bride adorns herself with her jewels."
 
 },
 {
 
 book_name: "Isaiah",
-verse_id: "21",
+verse_id: "2",
 verse_text: "You meet him who joyfully works righteousness, those who remember you in your ways. Behold, you were angry, and we sinned; in our sins we have been a long time, and shall we be saved?"
 
 },
 {
 
 book_name: "Isaiah",
-verse_id: "21",
+verse_id: "10",
 verse_text: "I will rejoice in Jerusalem and be glad in my people; no more shall be heard in it the sound of weeping and the cry of distress."
 
 },
 {
 
 book_name: "Jeremiah",
-verse_id: "21",
+verse_id: "12",
 verse_text: "Then shall the young women rejoice in the dance, and the young men and the old shall be merry. I will turn their mourning into joy; I will comfort them, and give them gladness for sorrow. ",
 
 },
@@ -376,7 +376,7 @@ verse_text: "I am not worthy of the least of all the deeds of steadfast love and
 },
 {
 book_name: "Genesis",
-verse_id: "21",
+verse_id: "29",
 verse_text: "But the LORD was with Joseph and showed him steadfast love and gave him favor in the sight of the keeper of the prison."
 },
 {
@@ -456,7 +456,7 @@ verse_text: "but my steadfast love will not depart from him, as I took it from S
 },
 {
 book_name: "2 Samuel",
-verse_id: "20",
+verse_id: "9",
 verse_text: "You came only yesterday, and shall I today make you wander about with us, since I go I know not where? Go back and take your brothers with you, and may the LORD show steadfast love and faithfulness to you.”"
 },
 {
@@ -521,7 +521,7 @@ verse_text: "The priests stood at their posts; the Levites also, with the instru
 },
 {
 book_name: "2 Chronicles",
-verse_id: "21",
+verse_id: "3",
 verse_text: "And when he had taken counsel with the people, he appointed those who were to sing to the LORD and praise him in holy attire, as they went before the army, and say, “Give thanks to the LORD, for his steadfast love endures forever.”"
 },
 {
@@ -701,7 +701,7 @@ verse_text: "Zion stretches out her hands, but there is none to comfort her; the
 },
 {
 book_name: "Lamentations",
-verse_id: "21",
+verse_id: "20",
 verse_text: "“They heard my groaning, yet there is no one to comfort me. All my enemies have heard of my trouble; they are glad that you have done it. You have brought the day you announced; now let them be as I am."
 },
 {

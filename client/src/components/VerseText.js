@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export const VerseText = (props) => {
-  const verse_url = `verses/${props.verse.id}`
+  debugger;
   return(
-    <Link to={verse_url}>
+
       <div className="col s12 l6 xl4 ">
         <div className="card blue-grey darken-2">
           <div className="card-content white-text center-align">
@@ -15,6 +15,6 @@ export const VerseText = (props) => {
           </div>
         </div>
       </div>
-    </Link>
+
   )
 }
