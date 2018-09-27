@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux'
 
 const VerseCard = (verse) => {
-
+  debugger;
   return (
     <div>
       <ul>
@@ -13,6 +13,8 @@ const VerseCard = (verse) => {
     </div>
   )
 }
+
+
 
 const mapStateToProps = state => {
   return {

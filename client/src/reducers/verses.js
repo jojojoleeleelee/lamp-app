@@ -1,5 +1,10 @@
 export default (
-  state = [], action) => {
+  state = {
+    verses: [],
+    verse: '',
+    myVerses: [],
+    loading: false,
+  }, action) => {
 
   switch(action.type){
     case "START_LOADING_VERSE":

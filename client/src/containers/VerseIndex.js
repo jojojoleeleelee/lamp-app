@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import VerseCard from '../components/VerseCard';
 import { loadNewVerses } from '../actions/verses';
+// import { loadVerses } from '../actions/verses';
+// import { bindActionCreators } from 'redux';
 
 class VerseIndex extends React.Component {
 
@@ -12,12 +14,17 @@ class VerseIndex extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className="row">
+      <h4>Browse All Verses</h4>
+          <div className="center-align">
+            <hr />
+            
+            {this.props.verses.map(verse =>
+            <VerseCard key={verse.id} index={verse.id} verse={verse}/>)}
 
-      {this.props.verses.map(verse =>
-      <VerseCard key={verse.id} index={verse.id} verse={verse}/>)}
+          </div>
+        </div>
 
-      </div>
     )
   }
 }
@@ -27,6 +34,13 @@ const mapStateToProps = (state) => {
     verses: state.verses
   }
 }
+// const mapDispatchToProps = (dispatch) => {
+//   return {
+//     getVerses: bindActionCreators(loadVerses, dispatch),
+//   }
+// }
+
+// export default connect(mapStateToProps, mapDispatchToProps)(VerseIndex)
 
 export default connect(mapStateToProps, {
   loadNewVerses
