@@ -40,8 +40,8 @@ export function myVersesSelector(selector){
   };
 }
 
-export function resetMyVerses() {
+export function unloadVerse() {
   return (dispatch) => {
-    dispatch({ type: 'RESET_MYVERSES'});
-  };
+    dispatch({ type: "LOAD_VERSE", payload: '' })
+  }
 }
