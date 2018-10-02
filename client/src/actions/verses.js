@@ -41,3 +41,28 @@ export function myVersesSelector(selector){
     dispatch({ type: 'MYVERSES_SELECTOR', payload: selector });
   };
 }
+
+export const memorizeVerse = (verse) => {
+  const updatedVerse = Object.assign(...verse, { memorized: true })
+  return dispatch => {
+    return fetch(`http://localhost:3001/verses/${verse.id}`, {
+      method: "PUT",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({verse: updatedVerse})
+      })
+    .then(response => response.json())
+    .then(verse => {
+      dispatch(verseMemorized(verse))
+    })
+  .catch(error => console.log(error))
+  }
+}
+
+export const verseMemorized = verse => {
+  return {
+    type: "VERSE_MEMORIZED",
+    verse
+  }
+}

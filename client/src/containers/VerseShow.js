@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 import { loadVerse } from '../actions/verses'
 
 import Verse from '../components/Verse';

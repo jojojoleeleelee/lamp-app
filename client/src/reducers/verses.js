@@ -18,6 +18,8 @@ export default (
       return Object.assign({}, state, {myVerses: myVerses})
     case "RESET_MYVERSES":
       return Object.assign({}, state, {verses: [], myVerses: []})
+    case "VERSE_MEMORIZED":
+      return Object.assign({}, state, {verse: action.payload, loading: false})
     default:
       return state
   }

@@ -2,21 +2,24 @@ import React from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 
+import { memorizeVerse } from '../actions/verses'
+
+import MemorizeButton from './MemorizeButton'
+
 const Verse = (verse) => {
   const verse_url = `verses/${verse.verse.id}`
+
   return (
-    <Link to={verse_url}>
-      <div className="card">
-        <div className="card card-panel grey">
-          <div className="card-content white-text center-align">
-            <h4>{verse.verse.book} - {verse.verse.chapter}</h4>
-            <h3><strong>{verse.verse.text}</strong></h3>
-            <br />
-           <h5>Memorized? {verse.verse.memorized ? "Yes Indeed!" : "Not Yet!" } </h5>
-          </div>
+    <div className="card">
+      <div className="card card-panel grey">
+        <div className="card-content white-text center-align">
+          <h4>{verse.verse.book} - {verse.verse.chapter}</h4>
+          <h3><strong>{verse.verse.text}</strong></h3>
+          <br />
+         <h5>{ verse.verse ? <MemorizeButton verse={verse.verse} /> : null } </h5>
         </div>
       </div>
-    </Link>
+    </div>
   )
 }
 
@@ -26,4 +29,6 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(Verse)
+export default connect(mapStateToProps, {
+  memorizeVerse
+})(Verse)

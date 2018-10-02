@@ -23,8 +23,6 @@ class About extends React.Component {
               <h3><strong>The unfolding of your words gives light;
 it gives understanding to the simple. </strong></h3>
               <h5>- Psalm 119:130</h5>
-              <br />
-              <br /><br />
               <br /><br />
               <h6>Seek, read and treasure words of truth.</h6>
               <br /><br />

@@ -2,50 +2,59 @@ import React from 'react';
 import { connect } from 'react-redux';
 import VerseCard from '../components/VerseCard';
 import { loadVerses } from '../actions/verses';
-import axios from 'axios'
-
-const API_URL = 'https://dbt.io/text/search?'
 
 class MyVerses extends React.Component {
-
-    state = {
-        query: '',
-        results: []
-      }
-
-      getSearch = () => {
-        axios.get(`${API_URL}key=87fd47726ddef251ea71c94d14b958a0&dam_id=ENGESVN2&query=${this.state.search}&v=2`).then(({ data }) => {
-          this.setState({
-            results: data.data
-          })
-        })
-      }
-
-      handleInputChange = () => {
-        this.setState({
-          query: this.search.value
-        }, () => {
-          if (this.state.query && this.state.query.length > 1) {
-            if (this.state.query.length % 2 === 0) {
-              this.getSearch()
-            }
-          } else if (!this.state.query) {
-          }
-        })
-      }
-
-      render() {
-        return (
-          <form>
-            <input
-              placeholder="Search for..."
-              ref={input => this.search = input}
-              onChange={this.handleInputChange}
-            />
-          </form>
-        )
-      }
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchTerm: '',
+      currentlyDisplayed: this.props.verses
     }
+  }
 
+  onInputChange = (event) => {
+    let newlyDisplayed = this.props.verses.filter(verse => verse.text.includes(event.target.value.toLowerCase()))
 
-export default MyVerses
+    this.setState({
+      searchTerm: event.target.value,
+      currentlyDisplayed: newlyDisplayed
+    })
+  }
+
+  renderVerses() {
+    return this.state.currentlyDisplayed.map((verse) => {
+      return(
+        <VerseCard key={verse.id} index={verse.id} verse={verse} />
+      )
+    })
+  }
+
+  componentDidMount() {
+    this.props.loadVerses()
+  }
+
+  render() {
+    return (
+      <div>
+      <form>
+        <input
+          placeholder="Search for..."
+          ref={input => this.search = input}
+          onChange={this.onInputChange}
+        />
+      </form>
+      { this.props.verses !== [] ? this.renderVerses() : null }
+    </div>
+    )
+  }
+}
+
+const mapStateToProps = (state) => {
+  return {
+    verses: state.verses
+  }
+}
+
+export default connect(mapStateToProps, {
+  loadVerses
+})(MyVerses)
