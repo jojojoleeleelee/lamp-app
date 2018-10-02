@@ -1,14 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
 
 import { memorizeVerse } from '../actions/verses'
-
 import MemorizeButton from './MemorizeButton'
 
 const Verse = (verse) => {
-  const verse_url = `verses/${verse.verse.id}`
-
   return (
     <div className="card">
       <div className="card card-panel grey">
