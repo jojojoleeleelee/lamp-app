@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import VerseCard from '../components/VerseCard';
 import { loadVerses } from '../actions/verses';
-import Suggestions from '../components/Suggestions'
 import axios from 'axios'
 
 const API_URL = 'https://dbt.io/text/search?'

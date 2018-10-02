@@ -13,16 +13,6 @@ export const loadVerses = () => {
   }
 }
 
-export function loadRandomVerse() {
-  const randomNum = Math.floor(Math.random() * Math.floor(250)) + 1
-  return (dispatch) => {
-    dispatch({ type: 'START_LOADING_VERSE' });
-    return fetch(`http://localhost:3001/verses/137`, {
-      accept: 'application/json',
-    }).then(response => response.json())
-      .then(verses => dispatch(getVerses(verses)));
-  };
-}
 
 export function loadVerse(id) {
   return (dispatch) => {
@@ -30,18 +20,24 @@ export function loadVerse(id) {
     return fetch(`http://localhost:3001/verses/${id}`, {
       accept: 'application/json',
     }).then(response => response.json())
-      .then(json => dispatch({ type: 'LOAD_VERSE', payload: json }));
+      .then(verses => dispatch(getVerses(verses)));
   };
 }
+
+export function loadRandomVerse() {
+  const randomNum = Math.floor(Math.random() * Math.floor(250)) + 1
+  return (dispatch) => {
+    dispatch({ type: 'START_LOADING_VERSE' });
+    return fetch(`http://localhost:3001/verses/${randomNum}`, {
+      accept: 'application/json',
+    }).then(response => response.json())
+      .then(verses => dispatch(getVerses(verses)));
+  };
+}
+
 
 export function myVersesSelector(selector){
   return (dispatch) => {
     dispatch({ type: 'MYVERSES_SELECTOR', payload: selector });
   };
-}
-
-export function unloadVerse() {
-  return (dispatch) => {
-    dispatch({ type: "LOAD_VERSE", payload: '' })
-  }
 }

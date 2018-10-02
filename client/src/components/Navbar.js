@@ -11,6 +11,7 @@ export const Navbar = () => {
           <li><Link to="/myverses" exact="true">My Verses</Link></li>
           <li><Link to="/verses" exact="true">All Verses</Link></li>
           <li><Link to="/verses/random" exact="true">Random</Link></li>
+          <li><Link to="/about" exact="true">About</Link></li>
         </ul>
       </div>
     </nav>

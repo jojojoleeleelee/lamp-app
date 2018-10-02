@@ -7,11 +7,11 @@ const VerseCard = (verse) => {
   return (
     <Link to={verse_url}>
       <div className="card">
-        <div className="card blue-grey">
+        <div className="card card-panel teal">
           <div className="card-content white-text center-align">
             <h5><strong>{verse.verse.text}</strong></h5>
             <p>{verse.verse.book} - {verse.verse.chapter}</p>
-            <p>Memorized? {verse.verse.memorized ? "Yes Indeed!" : "Not Yet!" } </p>
+           <p>Memorized? {verse.verse.memorized ? "Yes Indeed!" : "Not Yet!" } </p>
           </div>
         </div>
       </div>

@@ -6,26 +6,27 @@ import { bindActionCreators } from 'redux';
 import { navbar } from '../actions/site'
 import logo from '../lamp-logo.png'
 
-class Home extends React.Component {
+class About extends React.Component {
 
   render(){
     return (
       <div>
         <div className="center-align">
-        <br /><br />
-        <br /><br />
-          <h5>"Thy word is a LAMP unto my feet</h5>
-          <h5>And a light unto my path"</h5>
-          <h5> - Psalm 119:105</h5>
-          <br /><br />
+        <br />
+        <br />
           <Link to="/verses">
             <span>
-
-            <h1>L A M P</h1>
-              <img src={logo} alt="lamp-logo" height="300" /><br /><br />
-
+            <h3><strong>About L A M P:</strong></h3>
+            <br />
+            <br />
+              <img src={logo} alt="lamp-logo" height="300" /><br />
+              <h3><strong>The unfolding of your words gives light;
+it gives understanding to the simple. </strong></h3>
+              <h5>- Psalm 119:130</h5>
               <br />
               <br /><br />
+              <br /><br />
+              <h6>Seek, read and treasure words of truth.</h6>
               <br /><br />
               <br /><br />
               <br /><br />
@@ -50,4 +51,4 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(About)

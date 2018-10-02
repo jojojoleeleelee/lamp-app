@@ -1,9 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { Verse } from '../components/Verse'
 import VerseCard from '../components/VerseCard';
-
 import { loadRandomVerse } from '../actions/verses'
 
 class VerseRandom extends React.Component {
@@ -22,7 +20,7 @@ class VerseRandom extends React.Component {
         <br />
         <br />
         <hr />
-
+        {this.props.verse.verse !== '' ? <VerseCard key={this.props.verse.id} index={this.props.verse.id} verse={this.props.verse} /> : null }
       </div>
     )
   }
