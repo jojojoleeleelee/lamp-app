@@ -13,7 +13,7 @@ export const Footer = () => {
             <h5 class="white-text">Links</h5>
             <ul>
               <li><a class="grey-text text-lighten-3" href="/verses">All Verses</a></li>
-              <li><a class="grey-text text-lighten-3" href='/myverses'>My Verses</a></li>
+              <li><a class="grey-text text-lighten-3" href='/myverses'>Search Verses</a></li>
               <li><a class="grey-text text-lighten-3" href="/verses/random">Random Verses</a></li>
             </ul>
           </div>
