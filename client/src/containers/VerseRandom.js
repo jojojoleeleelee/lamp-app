@@ -1,10 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
 import { Verse } from '../components/Verse'
+import VerseCard from '../components/VerseCard';
+
 import { loadRandomVerse } from '../actions/verses'
-import { unloadVerse } from '../actions/verses'
 
 class VerseRandom extends React.Component {
 
@@ -12,11 +12,8 @@ class VerseRandom extends React.Component {
     this.props.loadRandomVerse()
   }
 
-  componentWillUnmount() {
-    this.props.unloadVerse()
-  }
-
   render() {
+
     return (
       <div className='center-align'>
       <h4>Surprise me!</h4>
@@ -25,7 +22,7 @@ class VerseRandom extends React.Component {
         <br />
         <br />
         <hr />
-        {this.props.verse !== '' ? <Verse verse={this.props.verse} /> : null}
+
       </div>
     )
   }
@@ -33,14 +30,10 @@ class VerseRandom extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    verse: state.verses.verse
+    verse: state.verses
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({
-    loadRandomVerse: loadRandomVerse,
-    unloadVerse: unloadVerse
-  }, dispatch)
-}
-export default connect(mapStateToProps, mapDispatchToProps)(VerseRandom)
+export default connect(mapStateToProps, {
+  loadRandomVerse
+})(VerseRandom)

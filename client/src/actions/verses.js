@@ -17,10 +17,10 @@ export function loadRandomVerse() {
   const randomNum = Math.floor(Math.random() * Math.floor(250)) + 1
   return (dispatch) => {
     dispatch({ type: 'START_LOADING_VERSE' });
-    return fetch(`http://localhost:3001/verses/${randomNum}`, {
+    return fetch(`http://localhost:3001/verses/137`, {
       accept: 'application/json',
     }).then(response => response.json())
-      .then(verse => dispatch({ type: 'LOAD_VERSE', payload: verse }));
+      .then(verses => dispatch(getVerses(verses)));
   };
 }
 

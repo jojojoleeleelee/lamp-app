@@ -5,7 +5,6 @@ import { loadVerses } from '../actions/verses';
 import Suggestions from '../components/Suggestions'
 import axios from 'axios'
 
-const { API_KEY } = process.env
 const API_URL = 'https://dbt.io/text/search?'
 
 class MyVerses extends React.Component {
