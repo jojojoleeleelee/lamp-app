@@ -12,6 +12,7 @@ class PrayerShow extends React.Component {
   render() {
     return (
       <div>
+
       {this.props.prayer.prayer !== [] ? <Prayer key={this.props.prayer.id} index={this.props.prayer.id} prayer={this.props.prayer} /> : null }
       </div>
     )

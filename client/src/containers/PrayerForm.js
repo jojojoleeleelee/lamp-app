@@ -27,7 +27,8 @@ class PrayerForm extends Component {
       <div>
         <h1 className="prayerName">A D D  *  P R A Y E R</h1>
         {this.props.errors === true ? <FormError/> : null}
-
+        <br />
+        <br />
       <form onSubmit={this.handleOnSubmit}>
         <div>
           <label htmlFor="summary">Summary:</label>
@@ -36,7 +37,8 @@ class PrayerForm extends Component {
             onChange={this.handleOnChange}
           />
         </div>
-
+        <br />
+        <br />
         <div>
           <label htmlFor="duration">Duration:</label>
           <textarea
@@ -45,7 +47,8 @@ class PrayerForm extends Component {
             name="duration"
           />
         </div>
-
+        <br />
+        <br />
         <div>
           <label htmlFor="focus">Focus Level:</label>
           <input
@@ -53,7 +56,9 @@ class PrayerForm extends Component {
             onChange={this.handleOnChange}
             name="focus"
           />
-
+          <br />
+          <br />
+          <br />
           <btn className="waves-effect waves-light btn">Add Prayer</btn>
         </div>
       </form>
