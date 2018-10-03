@@ -21,10 +21,10 @@ export function loadPrayer(id) {
     return fetch(`http://localhost:3001/prayers/${id}`, {
       accept: 'application/json',
     }).then(response => response.json())
-      .then(prayers => console.log(prayers));
+      .then(prayers => dispatch(getPrayer(prayers)));
   };
 }
-// dispatch(getPrayer(prayers))
+
 
 export function loadRandomPrayer() {
   const randomNum = Math.floor(Math.random() * Math.floor(250)) + 1
