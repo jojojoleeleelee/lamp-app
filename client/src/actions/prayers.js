@@ -1,6 +1,6 @@
 const getPrayer = prayers => {
   return {
-    type: "LOAD_ALL_VERSES",
+    type: "LOAD_ALL_PRAYERS",
     prayers
   }
 }
@@ -14,20 +14,22 @@ export const loadPrayers = () => {
 }
 
 
+
 export function loadPrayer(id) {
   return (dispatch) => {
-    dispatch({ type: 'START_LOADING_VERSE' });
+    dispatch({ type: 'START_LOADING_PRAYER' });
     return fetch(`http://localhost:3001/prayers/${id}`, {
       accept: 'application/json',
     }).then(response => response.json())
-      .then(prayers => dispatch(getPrayer(prayers)));
+      .then(prayers => console.log(prayers));
   };
 }
+// dispatch(getPrayer(prayers))
 
 export function loadRandomPrayer() {
   const randomNum = Math.floor(Math.random() * Math.floor(250)) + 1
   return (dispatch) => {
-    dispatch({ type: 'START_LOADING_VERSE' });
+    dispatch({ type: 'START_LOADING_PRAYER' });
     return fetch(`http://localhost:3001/prayers/${randomNum}`, {
       accept: 'application/json',
     }).then(response => response.json())

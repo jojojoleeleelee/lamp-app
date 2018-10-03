@@ -21,54 +21,40 @@ class PrayerForm extends Component {
   }
 
   render() {
-    const { name, ingredients, directions, cook_time } = this.props.prayerForm;
+    // const { duration, focus, summary } = this.props.prayerForm;
 
     return (
       <div>
-        <h1 className="prayerName">Create a New Prayer</h1>
+        <h1 className="prayerName">A D D  *  P R A Y E R</h1>
         {this.props.errors === true ? <FormError/> : null}
 
       <form onSubmit={this.handleOnSubmit}>
         <div>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="summary">Summary:</label>
           <input
             type="text"
             onChange={this.handleOnChange}
-            name="name"
-            value={name}
           />
         </div>
 
         <div>
-          <label htmlFor="ingredients">Ingredients:</label>
+          <label htmlFor="duration">Duration:</label>
           <textarea
             type="text"
             onChange={this.handleOnChange}
-            name="ingredients"
-            value={ingredients}
+            name="duration"
           />
         </div>
 
         <div>
-          <label htmlFor="directions">Directions:</label>
-          <textarea
-            type="text"
-            onChange={this.handleOnChange}
-            name="directions"
-            value={directions}
-          />
-        </div>
-
-        <div>
-          <label htmlFor="cook_time">Cook Time:</label>
+          <label htmlFor="focus">Focus Level:</label>
           <input
             type="text"
             onChange={this.handleOnChange}
-            name="cook_time"
-            value={cook_time}
+            name="focus"
           />
 
-          <button type="submit">Add Prayer</button>
+          <btn className="waves-effect waves-light btn">Add Prayer</btn>
         </div>
       </form>
       </div>

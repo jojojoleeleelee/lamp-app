@@ -7,7 +7,7 @@ export default (
     case "LOAD_PRAYER":
       return Object.assign({}, state, {verse: action.payload, loading: false})
     case "LOAD_ALL_PRAYERS":
-      return action.verses
+      return action.prayers
     case "PRAYER_MEMORIZED":
       return Object.assign({}, state, {verse: action.payload, loading: false})
     default:
