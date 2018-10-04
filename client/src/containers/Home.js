@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
 
-import { navbar } from '../actions/site'
 import logo from '../lamp-logo.png'
 
 class Home extends React.Component {
@@ -22,7 +20,7 @@ class Home extends React.Component {
             <span>
 
             <h1>L A M P</h1>
-              <img src={logo} alt="lamp-logo" height="300" /><br /><br />
+              <img src={logo} alt="lamp-logo" height="300" className="blink_me"/><br /><br />
 
               <br />
               <br /><br />
@@ -43,11 +41,6 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return bindActionCreators({
-    navbar: navbar,
-  }, dispatch);
-};
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps)(Home)

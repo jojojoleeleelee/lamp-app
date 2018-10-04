@@ -1,3 +1,4 @@
+
 const getPrayer = prayers => {
   return {
     type: "LOAD_ALL_PRAYERS",
@@ -73,6 +74,8 @@ export const fetchPrayer = (prayerId) => {
 }
 
 export const createPrayer = (prayer, routerHistory) => {
+  console.log("creating prayer", prayer)
+  console.log("router", routerHistory)
   return dispatch => {
     return fetch(`http://localhost:3001/prayers`, {
       method: "POST",
@@ -81,7 +84,7 @@ export const createPrayer = (prayer, routerHistory) => {
       },
       body: JSON.stringify({prayer: prayer})
     })
-    .then(response => console.log(response))
+    .then(response => response.json())
     .then(prayer => {
       dispatch(addPrayer(prayer))
       dispatch(resetPrayerForm())

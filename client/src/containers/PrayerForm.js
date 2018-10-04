@@ -16,13 +16,18 @@ class PrayerForm extends Component {
 
   handleOnSubmit = e => {
     e.preventDefault();
-    const { createPrayer, prayerForm } = this.props;
-		createPrayer(prayerForm);
+    this.props.createPrayer(this.props.prayerForm)
+    this.props.history.push('/')
+    // const { createPrayer, prayerForm } = this.props;
+		// createPrayer(prayerForm);
   }
 
   render() {
-    // const { duration, focus, summary } = this.props.prayerForm;
 
+    // const { duration, focus, summary } = this.props.prayerForm;
+    // value={summary}
+    // value={duration}
+    // value={focus}
     return (
       <div className="center-align">
         <h1 className="prayerName">A D D  *  P R A Y E R</h1>
@@ -35,7 +40,8 @@ class PrayerForm extends Component {
           <input
             type="text"
             onChange={this.handleOnChange}
-            value={this.props.prayerForm}
+
+            placeholder="Write down the summary of your prayer"
           />
         </div>
         <br />
@@ -46,7 +52,8 @@ class PrayerForm extends Component {
             type="text"
             onChange={this.handleOnChange}
             name="duration"
-            value={this.props.prayerForm}
+
+            placeholder="How long was your prayer in minutes?"
           />
         </div>
         <br />
@@ -57,7 +64,8 @@ class PrayerForm extends Component {
             type="text"
             onChange={this.handleOnChange}
             name="focus"
-            value={this.props.prayerForm}
+
+            placeholder="Out of 5, how would you rate your focus level?"
           />
           <br />
           <br />
