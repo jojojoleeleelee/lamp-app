@@ -19,7 +19,13 @@ export default (
     case "RESET_MYVERSES":
       return Object.assign({}, state, {verses: [], myVerses: []})
     case "VERSE_MEMORIZED":
-      return Object.assign({}, state, {verse: action.payload, loading: false})
+      return state.map((verse) => {
+        if (verse.id === action.verse.id) {
+          return action.verse
+        } else {
+          return verse
+        }
+      })
     default:
       return state
   }

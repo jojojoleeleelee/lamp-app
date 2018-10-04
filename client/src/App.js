@@ -12,6 +12,7 @@ import VerseIndex from './containers/VerseIndex'
 import About from './containers/About'
 import Prayer from './containers/Prayer'
 import PrayerShow from './containers/PrayerShow'
+import PrayerForm from './containers/PrayerForm'
 
 class App extends Component {
   render() {
@@ -27,6 +28,7 @@ class App extends Component {
               <Route exact path="/verses" component={VerseIndex} />
               <Route exact path="/verses/random" component={VerseRandom} />
               <Route exact path="/prayers" component={Prayer} />
+              <Route exact path="/prayers/new" component={PrayerForm} />
               <Route exact path="/prayers/:id" component={PrayerShow} />
               <Route exact path='/verses/:id' component={VerseShow} />
               <Route exact path='/about' component={About} />

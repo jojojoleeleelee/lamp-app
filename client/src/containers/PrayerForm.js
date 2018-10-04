@@ -16,15 +16,15 @@ class PrayerForm extends Component {
 
   handleOnSubmit = e => {
     e.preventDefault();
-    const { createPrayer, prayerForm, history} = this.props;
-		createPrayer(prayerForm, history);
+    const { createPrayer, prayerForm } = this.props;
+		createPrayer(prayerForm);
   }
 
   render() {
     // const { duration, focus, summary } = this.props.prayerForm;
 
     return (
-      <div>
+      <div className="center-align">
         <h1 className="prayerName">A D D  *  P R A Y E R</h1>
         {this.props.errors === true ? <FormError/> : null}
         <br />
@@ -35,31 +35,39 @@ class PrayerForm extends Component {
           <input
             type="text"
             onChange={this.handleOnChange}
+            value={this.props.prayerForm}
           />
         </div>
         <br />
         <br />
         <div>
-          <label htmlFor="duration">Duration:</label>
+          <label htmlFor="duration">Duration (in minutes):</label>
           <textarea
             type="text"
             onChange={this.handleOnChange}
             name="duration"
+            value={this.props.prayerForm}
           />
         </div>
         <br />
         <br />
         <div>
-          <label htmlFor="focus">Focus Level:</label>
+          <label htmlFor="focus">Focus Level (out of 5):</label>
           <input
             type="text"
             onChange={this.handleOnChange}
             name="focus"
+            value={this.props.prayerForm}
           />
           <br />
           <br />
           <br />
-          <btn className="waves-effect waves-light btn">Add Prayer</btn>
+          <button className="waves-effect waves-light btn" type='submit'>Add Prayer</button>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </div>
       </form>
       </div>

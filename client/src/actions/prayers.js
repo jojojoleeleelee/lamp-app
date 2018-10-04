@@ -43,11 +43,13 @@ export const updatePrayerForm = prayerForm => {
     prayerForm
   }
 }
+
 export const resetPrayerForm = () => {
   return {
     type: 'RESET_PRAYER_FORM'
   }
 }
+
 export const getPrayers = () => {
   return dispatch => {
     return fetch(`http://localhost:3001/prayers`)
@@ -79,7 +81,7 @@ export const createPrayer = (prayer, routerHistory) => {
       },
       body: JSON.stringify({prayer: prayer})
     })
-    .then(response => response.json())
+    .then(response => console.log(response))
     .then(prayer => {
       dispatch(addPrayer(prayer))
       dispatch(resetPrayerForm())
@@ -87,7 +89,6 @@ export const createPrayer = (prayer, routerHistory) => {
     })
     .catch(error => {
       dispatch({type: 'error'})
-      routerHistory.replace(`/prayers/new`)
      })
   }
 }

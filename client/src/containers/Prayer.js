@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import PrayerForm from './PrayerForm';
 import PrayerCard from '../components/PrayerCard';
 import { loadPrayers } from '../actions/prayers';
-
+import { Link } from 'react-router-dom';
 
 class Prayer extends Component {
 
@@ -14,7 +14,13 @@ class Prayer extends Component {
   render() {
     return (
       <div className='center-align'>
-        <PrayerForm />
+        <br />
+        <br />
+
+        <h5> C R E A T E *** P R A Y E R</h5>
+        <br />
+        <br />
+        <Link to="/prayers/new" ><btn className="waves-effect waves-light btn">N E W</btn></Link>
         <br />
         <br />
         <h2>*** P R A Y E R S ***</h2>
