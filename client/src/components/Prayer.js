@@ -1,6 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux'
 
+// import { deletePrayer } from '../actions/prayers'
+
 const Prayer = (prayer) => {
   return (
     <div className="card">

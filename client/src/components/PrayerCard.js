@@ -14,7 +14,7 @@ const PrayerCard = (prayer) => {
             <br />
             <p>{prayer.prayer.duration} minutes - Focus Level: {prayer.prayer.focus}</p>
             <br />
-           <p>{prayer.prayer.verse_id ? "Verse Attached" : null } </p>
+           <p>{prayer.prayer.verse_id ? "Verse Attached" : "No Verse Attached" } </p>
           </div>
         </div>
       </div>
