@@ -22,7 +22,7 @@ export function loadPrayer(id) {
     return fetch(`http://localhost:3001/prayers/${id}`, {
       accept: 'application/json',
     }).then(response => response.json())
-      .then(prayers => dispatch(getPrayer(prayers)));
+      .then(prayer => dispatch(getPrayer(prayer)));
   };
 }
 
@@ -34,7 +34,7 @@ export function loadRandomPrayer() {
     return fetch(`http://localhost:3001/prayers/${randomNum}`, {
       accept: 'application/json',
     }).then(response => response.json())
-      .then(prayers => dispatch(getPrayer(prayers)));
+      .then(prayer => dispatch(getPrayer(prayer)));
   };
 }
 

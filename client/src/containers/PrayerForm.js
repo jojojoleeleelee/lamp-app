@@ -6,7 +6,7 @@ import FormError from '../components/FormError';
 
 class PrayerForm extends Component {
 
-  handleOnChange = event => {
+  handleOnChange = (event) => {
     const {name, value} = event.target;
     const currentPrayerForm = Object.assign({}, this.props.prayerForm, {
       [name]: value
@@ -23,24 +23,21 @@ class PrayerForm extends Component {
   }
 
   render() {
+    const { duration, focus, summary } = this.props.prayerForm;
 
-    // const { duration, focus, summary } = this.props.prayerForm;
-    // value={summary}
-    // value={duration}
-    // value={focus}
     return (
       <div className="center-align">
         <h1 className="prayerName">A D D  *  P R A Y E R</h1>
         {this.props.errors === true ? <FormError/> : null}
         <br />
         <br />
-      <form onSubmit={this.handleOnSubmit}>
+      <form onSubmit={this.handleOnSubmit} onChange={this.handleOnChange}>
         <div>
           <label htmlFor="summary">Summary:</label>
           <input
             type="text"
-            onChange={this.handleOnChange}
-
+            name="summary"
+            value={summary}
             placeholder="Write down the summary of your prayer"
           />
         </div>
@@ -50,9 +47,8 @@ class PrayerForm extends Component {
           <label htmlFor="duration">Duration (in minutes):</label>
           <textarea
             type="text"
-            onChange={this.handleOnChange}
             name="duration"
-
+            value={duration}
             placeholder="How long was your prayer in minutes?"
           />
         </div>
@@ -62,9 +58,8 @@ class PrayerForm extends Component {
           <label htmlFor="focus">Focus Level (out of 5):</label>
           <input
             type="text"
-            onChange={this.handleOnChange}
             name="focus"
-
+            value={focus}
             placeholder="Out of 5, how would you rate your focus level?"
           />
           <br />
