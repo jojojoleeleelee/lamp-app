@@ -97,6 +97,7 @@ export const createPrayer = (prayer, routerHistory) => {
 }
 
 export const deletePrayer = (prayerId) => {
+  console.log("deleting prayer", prayerId)
   return dispatch => {
     return fetch(`http://localhost:3001/prayers/${prayerId}`, {
       method: "DELETE"

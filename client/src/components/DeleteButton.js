@@ -5,7 +5,7 @@ import { deletePrayer } from '../actions/prayers'
 class DeleteButton extends React.Component {
 
   handleDelete = () => {
-    console.log(this.props.prayer)
+    console.log(this)
     this.props.deletePrayer(this.props.prayer.id)
   }
   render() {

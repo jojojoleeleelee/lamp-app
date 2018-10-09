@@ -17,9 +17,7 @@ class PrayerForm extends Component {
   handleOnSubmit = e => {
     e.preventDefault();
     this.props.createPrayer(this.props.prayerForm)
-    this.props.history.push('/')
-    // const { createPrayer, prayerForm } = this.props;
-		// createPrayer(prayerForm);
+    this.props.history.push('/prayers')
   }
 
   render() {

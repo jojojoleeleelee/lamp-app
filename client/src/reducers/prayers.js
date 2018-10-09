@@ -13,7 +13,7 @@ export default (
     case "GET_PRAYERS":
       return action.prayers;
     case "REMOVE_PRAYER":
-      return state.filter(prayer => prayer.id !== action.prayer);
+      return action.prayer;
     default:
       return state
   }
