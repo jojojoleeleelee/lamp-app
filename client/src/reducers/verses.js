@@ -9,13 +9,7 @@ export default (
     case "LOAD_ALL_VERSES":
       return action.verses
     case "VERSE_MEMORIZED":
-      return state.map((verse) => {
-        if (verse.id === action.verse.id) {
-          return action.verse
-        } else {
-          return verse
-        }
-      })
+      return action.verse
     default:
       return state
   }

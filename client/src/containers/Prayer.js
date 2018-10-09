@@ -26,7 +26,7 @@ class Prayer extends Component {
         <br />
         <br />
         { this.props.prayers !== [] ? this.props.prayers.map( prayer =>
-        <PrayerCard key={prayer.id} index={prayer.id} prayer={prayer} /> ) : null}
+        <PrayerCard key={prayer.id} index={prayer.id} prayer={prayer} /> ) : []}
       </div>
     )
   }

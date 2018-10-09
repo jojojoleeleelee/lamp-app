@@ -7,7 +7,9 @@ const getVerses = verses => {
 
 export const loadVerses = () => {
   return dispatch => {
-    return fetch(`http://localhost:3001/verses`)
+    return fetch(`http://localhost:3001/verses`, {
+      accept: 'application/json',
+    })
     .then(res => res.json())
     .then(verses => dispatch(getVerses(verses)))
   }
@@ -35,15 +37,9 @@ export function loadRandomVerse() {
   };
 }
 
-
-export function myVersesSelector(selector){
-  return (dispatch) => {
-    dispatch({ type: 'MYVERSES_SELECTOR', payload: selector });
-  };
-}
-
 export const memorizeVerse = (verse) => {
-  const updatedVerse = Object.assign(...verse, { memorized: true })
+  const updatedVerse = {...verse, memorized: true}
+  console.log(updatedVerse)
   return dispatch => {
     return fetch(`http://localhost:3001/verses/${verse.id}`, {
       method: "PUT",
@@ -54,13 +50,13 @@ export const memorizeVerse = (verse) => {
       })
     .then(response => response.json())
     .then(verse => {
-      dispatch(verseMemorized(verse))
+      dispatch(verseMemorized(updatedVerse, verse.id))
     })
   .catch(error => console.log(error))
   }
 }
 
-export const verseMemorized = verse => {
+export const verseMemorized = (verse, id) => {
   return {
     type: "VERSE_MEMORIZED",
     verse

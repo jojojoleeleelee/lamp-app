@@ -43,7 +43,7 @@ class MyVerses extends React.Component {
           onChange={this.onInputChange}
         />
       </form>
-      { this.props.verses !== [] ? this.renderVerses() : null }
+      { this.props.verses !== [] ? this.renderVerses() : [] }
     </div>
     )
   }
