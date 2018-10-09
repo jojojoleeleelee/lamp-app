@@ -7,7 +7,7 @@ import MemorizeButton from './MemorizeButton'
 const Verse = (verse) => {
   return (
     <div className="card">
-      <div className="card card-panel grey">
+      <div className="card card-panel blue lighten-4">
         <div className="card-content white-text center-align">
           <h4>{verse.verse.book} - {verse.verse.chapter}</h4>
           <h3><strong>{verse.verse.text}</strong></h3>

@@ -44,6 +44,6 @@ class VersesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def verse_params
-      params.require(:verse).permit(:duration, :focus, :context)
+      params.require(:verse).permit(:text, :book, :chapter, :memorized)
     end
 end

@@ -13,8 +13,9 @@ class VerseIndex extends React.Component {
   render() {
     return(
       <div>
-      { this.props.verses !== [] ? this.props.verses.map( verse =>
-      <VerseCard key={verse.id} index={verse.id} verse={verse} /> ) : []}
+      <br />
+      { this.props.verses[3] !== undefined ? this.props.verses.map( verse =>
+      <VerseCard key={verse.id} index={verse.id} verse={verse} /> ) : null}
     </div>
     )
   }

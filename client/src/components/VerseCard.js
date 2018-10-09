@@ -7,7 +7,7 @@ const VerseCard = (verse) => {
   return (
     <Link to={verse_url}>
       <div className="card">
-        <div className="card card-panel teal">
+        <div className="card card-panel deep-purple lighten-4">
           <div className="card-content white-text center-align">
             <h5><strong>{verse.verse.text}</strong></h5>
             <p>{verse.verse.book} - {verse.verse.chapter}</p>

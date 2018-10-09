@@ -8,7 +8,7 @@ const PrayerCard = (prayer) => {
   return (
     <Link to={prayer_url}>
       <div className="card">
-        <div className="card card-panel light-green">
+        <div className="card card-panel light-green lighten-3">
           <div className="card-content white-text center-align">
             <h5><strong>{prayer.prayer.summary}</strong></h5>
             <br />
