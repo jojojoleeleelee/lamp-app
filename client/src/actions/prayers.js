@@ -96,14 +96,13 @@ export const createPrayer = (prayer, routerHistory) => {
   }
 }
 
-export const deletePrayer = (prayerId, routerHistory) => {
+export const deletePrayer = (prayerId) => {
   return dispatch => {
     return fetch(`http://localhost:3001/prayers/${prayerId}`, {
       method: "DELETE"
     })
     .then(response => {
       dispatch(removePrayer(prayerId));
-      routerHistory.replace('/prayers');
     })
     .catch(error => console.log(error))
   }

@@ -14,7 +14,7 @@ const Prayer = (prayer) => {
           <h5>P R A Y E D * {prayer.prayer.duration} M I N
           <hr /> F O C U S * {prayer.prayer.focus} (out of 5)</h5>
           <br />
-          <DeleteButton />
+          <DeleteButton prayer={prayer.prayer}/>
         </div>
       </div>
     </div>

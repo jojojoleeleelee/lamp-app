@@ -12,12 +12,8 @@ export default (
       return action.prayers
     case "GET_PRAYERS":
       return action.prayers;
-    // case "CREATE_PRAYER":
-    //   return state.concat(action.prayer)
-    // case "REMOVE_PRAYER":
-    //   return state.filter(prayer => prayer.id !== action.prayerId);
-    // case "UPDATED_PRAYER":
-    //   return action.prayerForm
+    case "REMOVE_PRAYER":
+      return state.filter(prayer => prayer.id !== action.prayer);
     default:
       return state
   }
