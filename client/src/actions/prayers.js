@@ -74,7 +74,8 @@ export const fetchPrayer = (prayerId) => {
 }
 
 export const createPrayer = (prayer) => {
-  console.log("creating prayer", prayer)
+  //console.log("creating prayer", prayer)
+  console.log('C')
   return dispatch => {
     return fetch(`http://localhost:3001/prayers`, {
       method: "POST",
@@ -85,6 +86,7 @@ export const createPrayer = (prayer) => {
     })
     .then(response => response.json())
     .then(prayer => {
+      console.log('D')
       dispatch(addPrayer(prayer))
       dispatch(resetPrayerForm())
     })

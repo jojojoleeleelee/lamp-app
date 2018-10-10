@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import LikeButton from './LikeButton'
 
 const VerseCard = (verse) => {
   const verse_url = `verses/${verse.verse.id}`
@@ -12,6 +13,7 @@ const VerseCard = (verse) => {
             <h5><strong>{verse.verse.text}</strong></h5>
             <p>{verse.verse.book} - {verse.verse.chapter}</p>
            <p>Memorized? {verse.verse.memorized ? "Yes Indeed!" : "Not Yet!" } </p>
+           <LikeButton />
           </div>
         </div>
       </div>
