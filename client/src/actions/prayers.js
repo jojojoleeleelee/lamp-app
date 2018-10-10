@@ -73,9 +73,8 @@ export const fetchPrayer = (prayerId) => {
 	}
 }
 
-export const createPrayer = (prayer, routerHistory) => {
+export const createPrayer = (prayer) => {
   console.log("creating prayer", prayer)
-  console.log("router", routerHistory)
   return dispatch => {
     return fetch(`http://localhost:3001/prayers`, {
       method: "POST",
@@ -88,7 +87,6 @@ export const createPrayer = (prayer, routerHistory) => {
     .then(prayer => {
       dispatch(addPrayer(prayer))
       dispatch(resetPrayerForm())
-      routerHistory.replace(`http://localhost:3001/prayers/${prayer.id}`)
     })
     .catch(error => {
       dispatch({type: 'error'})
