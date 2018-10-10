@@ -21,7 +21,7 @@ class LikeButton extends React.Component {
   render() {
     return (
       <div>
-        <p>Add Likes:  -- 
+        <p>Add Likes:  --
         <btn className="waves-effect waves-light btn" onClick={this.addLikes}>{this.state.likes}</btn></p>
       </div>
     )
@@ -30,3 +30,5 @@ class LikeButton extends React.Component {
 
 
 export default LikeButton
+
+// Promise, async function, orders of function calls
